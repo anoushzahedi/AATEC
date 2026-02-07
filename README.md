@@ -1,43 +1,56 @@
-### README
+# AATEC-Online: Approach Avoidance Training vs Evaluative Conditioning 
 
-## Experiment Overview
+**Author:** Anoushiravan Zahedi  
+**Repository:** [https://github.com/anoushzahedi/AATEC](https://github.com/anoushzahedi/AATEC)
 
-The experiment uses a within-subject design with one session to investigate participants’ choices. The study is **fMRI-compatible** and supports responses via **joysticks** and an **MRI response box**.
+## Overview
+This version of the **AATEC** suite is optimized for **online administration** and behavioral lab settings. It utilizes standard computer peripherals (**Mouse & Keyboard**) to ensure maximum accessibility and ease of use for remote participants.
 
-## Structure
+The task investigates how attentional training influences consumer preferences and choice behavior using a modular within-subject design.
 
-The behavioral measurement contains three parts.
+---
 
-### Part 1: Preference and Choice
+## Experimental Structure
 
-Two tasks are administered:
+The experiment consists of three sequential parts:
 
-1. **Willingness to Pay (WTP)**
-   Participants see pictures of toys one by one and indicate how much they are willing to pay for the presented toy on a continuous scale.
+### Part 1: Baseline Preferences
+1. **Willingness to Pay (WTP)**: Participants view toy images and indicate their valuation using a **mouse-controlled** continuous slider.
+2. **Binary Choice Task**: A rapid choice task where participants use the **keyboard** to indicate whether they would like to have the presented toy.
 
-2. **Binary Choice Task**
-   Pictures of toys are shown one by one, and participants choose whether they want to have the presented toy.
+### Part 2: Attentional Training
+1. **Approach/Avoid Task (Sound-Cued)**: Participants use the **mouse** to "pull" or "push" toys based on auditory cues (e.g., high vs. low pitch tones).
+2. **Emotion Categorization Task**: A speeded **keyboard-response** task where participants categorize emotional stimuli as quickly and accurately as possible.
 
-### Part 2: Attentional Tasks
+### Part 3: Post-Training & Competitive Choice
+1. **Willingness to Pay (WTP)**: Follow-up valuation to measure the impact of training.
+2. **Binary Choice Task**: Follow-up choice consistency check.
+3. **Competitive Choice Task**: A forced-choice paradigm where participants use the **mouse or keyboard** to choose between two simultaneously presented options.
 
-Participants take part in attentional tasks where they respond to the toys based on instructions. There are two tasks:
+---
 
-1. **Approach/Avoid Task (Sound-Cued)**
-   Participants must approach or avoid shown toys based on a presented sound (e.g., high vs. low pitch).
+## Technical Specifications
 
-2. **Emotion Categorization Task**
-   Participants must categorize emotional pictures as quickly as possible.
+### Administration & Input
+- **Optimized for Online Use**: Designed for stability across different monitor sizes and web-based environments.
+- **Input Devices**: 
+  - **Mouse**: Used for continuous scales and approach/avoid movements.
+  - **Keyboard**: Used for rapid categorization and binary decisions.
+- **Software**: Compatible with MATLAB/Psychtoolbox or exportable for web-based platforms (e.g., Pavlovia/JATOS).
 
-### Part 3: Post-Training Preference and Competitive Choice
+### Data Quality & Engagement
+- **Attention Checks**: Multiple validated attention checks are embedded throughout the tasks to ensure data reliability in unmonitored environments.
+- **Inactivity Timeout**: The task will automatically terminate if no response is detected for **3 minutes** to prevent incomplete or low-effort data collection.
 
-Participants complete the two tasks from Part 1 plus a third task:
+---
 
-1. **Willingness to Pay (WTP)**
-2. **Binary Choice Task**
-3. **Competitive Choice Task**
-   Two options are presented, and participants can choose only one.
+## Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anoushzahedi/AATEC.git
+   ```
+2. Ensure your environment supports audio playback for the sound-cued tasks.
+3. Run the initialization script to calibrate the screen and input sensitivity for the participant's local hardware.
 
-## Important Notes
-
-- **PLEASE BE AWARE:** The study contains several attention checks and attention tasks.
-- **PLEASE BE AWARE:** During the experiment, you cannot be unresponsive for more than **3 minutes**. Otherwise, the tasks will end automatically.
+## License
+This project is licensed under the MIT License.
