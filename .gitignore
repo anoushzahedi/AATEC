@@ -5,10 +5,6 @@ Results/*
 
 Pictures/Positive/*
 Pictures/Negative/*
-Pictures/PicsPrac/*
-Pictures/PicsOnline/*
 
 !Pictures/Positive/.gitkeep
 !Pictures/Negative/.gitkeep
-!Pictures/PicsPrac/.gitkeep
-!Pictures/PicsOnline/.gitkeep
